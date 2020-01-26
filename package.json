@@ -1,0 +1,5 @@
+{
+    "scripts": {
+        "build": "npm --prefix ./hello-world run build && sam build"
+    }
+}
