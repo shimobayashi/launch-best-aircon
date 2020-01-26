@@ -7,6 +7,7 @@
   "author": "SAM CLI",
   "license": "MIT",
   "dependencies": {
+    "@types/node": "^13.5.0",
     "axios": "^0.18.0",
     "ts-node": "^8.6.2",
     "typescript": "^3.7.5"
