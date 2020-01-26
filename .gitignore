@@ -1,3 +1,8 @@
+# ビルド結果をコミットする必要はないはず。
+.aws-sam/
+# デプロイ設定は各々が好きにしたら良いのでコミットする必要はないはず。
+# 実際は自分自身しかデプロイしないと思われるので、含めてしまっても良いが……。
+samconfig.toml
 
 # Created by https://www.gitignore.io/api/osx,node,linux,windows
 
