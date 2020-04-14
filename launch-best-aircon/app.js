@@ -75,7 +75,7 @@ function lambdaHandler(event, context) {
                     _a.label = 2;
                 case 2:
                     message = 'Nothing to do';
-                    if (!(currentTemperature < 18.0)) return [3 /*break*/, 4];
+                    if (!(currentTemperature < 20.0)) return [3 /*break*/, 4];
                     return [4 /*yield*/, axios_1["default"]("https://maker.ifttt.com/trigger/aircon_on_heater/with/key/" + process.env.IFTTT_API_KEY)];
                 case 3:
                     ret = _a.sent();

@@ -34,7 +34,7 @@ export async function lambdaHandler (event, context) {
 
         // 室温に応じて適切にエアコンを操作する。
         let message:string = 'Nothing to do';
-        if (currentTemperature < 18.0) {
+        if (currentTemperature < 20.0) {
             const ret:AxiosResponse = await axios(`https://maker.ifttt.com/trigger/aircon_on_heater/with/key/${process.env.IFTTT_API_KEY}`);
             message = ret.data.trim();
         } else if (currentTemperature >= 30.0) {
